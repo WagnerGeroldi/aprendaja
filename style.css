@@ -1,0 +1,53 @@
+.title-about {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(2, 187, 2);
+    text-align: center;
+}
+
+#fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+.ajust {
+    height: 90px;
+}
+
+.title-about span {
+ color: rgb(255, 255, 255);
+ font-style: italic;
+}
+
+.r-1 {
+    background-image: url(assets/bg1.jpg);
+    background-size: cover;
+    
+}
+
+.r-2 {
+    background-image: url(assets/bg2.png);
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+    
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.logo:hover {
+    scale: 1.1;
+}
+
+.footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
