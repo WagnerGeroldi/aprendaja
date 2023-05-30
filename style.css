@@ -19,6 +19,8 @@
 .title-about span {
  color: rgb(255, 255, 255);
  font-style: italic;
+ background: green;
+ padding: 5px;
 }
 
 .r-1 {
