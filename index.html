@@ -13,11 +13,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-success" id="fixed">
@@ -61,19 +57,19 @@
     </nav>
     <div class="container-fluid">
       <div class="ajust" id="index"></div>
-      <div class="row mt-2 r-1">
-        <div class="col-12 col-lg-6 mt-5">
+      <div class="row mt-2 r-1" >
+        <div class="col-12 col-lg-6 mt-5" data-aos="fade-up">
           <p class="title-about">
             APRENDA MUITO MAIS <span class="text-green"> POR BEM MENOS </span>
           </p>
         </div>
-        <div class="col-12 col-lg-6 text-center mt-3 pt-5">
+        <div class="col-12 col-lg-6 text-center mt-3 pt-5" data-aos="fade-up">
           <img src="assets/logo-normal.png" alt="" />
         </div>
       </div>
       <div class="ajust" id="about"></div>
-      <div class="row">
-        <div class="col-12 col-lg-6 mt-5">
+      <div class="row" data-aos="fade-up">
+        <div class="col-12 col-lg-6 mt-5" >
           <h3 class="text-center mb-2">Sobre a Aprenda já</h3>
           <img src="assets/group.jpg" class="img-fluid" alt="" />
         </div>
@@ -96,7 +92,7 @@
         </div>
       </div>
       <div class="ajust" id="info"></div>
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         <div class="col-12 text-center mb-5">
           <h2>INFORMAÇÕES</h2>
         </div>
@@ -137,16 +133,16 @@
       </div>
       <div class="ajust" id="partner"></div>
       <div class="row r-2">
-        <div class="col-12 mt-5 text-center">
+        <div class="col-12 mt-5 text-center" data-aos="fade-up">
           <h2>Nossos Parceiros</h2>
         </div>
-        <div class="col-12 text-center mt-3">
+        <div class="col-12 text-center mt-3" data-aos="fade-up">
           <p>
             A aprenda já conta com escolas especializadas que dispõem o que há
             de melhor tanto em estrutura quanto na qualidade do ensino
           </p>
         </div>
-        <div class="row text-center mt-5">
+        <div class="row text-center mt-5" data-aos="fade-up">
           <div class="col-12 col-lg-3 col-md-6">
             <a href="http://redeunisoft.com.br" target="_blank" class="logo">
               <img src="assets/unisoft.png" class="img-fluid p-3" alt=""
@@ -177,22 +173,40 @@
         </div>
       </div>
       <div class="ajust" id="contact"></div>
-      <div class="row mt-5">
+      <div class="row mt-5" data-aos="fade-up">
         <div class="col-12 text-center">
           <h2>Entre em contato conosco</h2>
         </div>
         <form action="send.php" method="POST" class="row g-3">
           <div class="col-12 col-lg-8 mx-auto">
             <label for="name" class="form-label">Nome</label>
-            <input type="text" name="name" id="name" class="form-control" required />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              required
+            />
           </div>
           <div class="col-12 col-lg-8 mx-auto">
             <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" name="email" required/>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
           </div>
           <div class="col-12 col-lg-8 mx-auto">
             <label for="city" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="city" name="city" required/>
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              name="city"
+              required
+            />
           </div>
           <div class="col-12 col-lg-8 mx-auto">
             <label for="state" class="form-label">Estado</label>
@@ -210,27 +224,53 @@
               <select id="find" name="find" class="form-select" required>
                 <option selected>Escolha...</option>
                 <option value="Rede Social">Rede Social</option>
-                <option value="Indicação de um Amigo">Indicação de um Amigo</option>
-                <option value="Convite em uma escola">Convite em uma escola</option>
-                <option value="Pesquisando na Internet">Pesquisando na Internet</option>
+                <option value="Indicação de um Amigo">
+                  Indicação de um Amigo
+                </option>
+                <option value="Convite em uma escola">
+                  Convite em uma escola
+                </option>
+                <option value="Pesquisando na Internet">
+                  Pesquisando na Internet
+                </option>
               </select>
             </div>
           </div>
-          <div class=" col-12 col-lg-8 mb-3 mx-auto">
-            <label for="message" class="form-label">Digite Sua mensagem para nós</label>
-            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Sua mensagem aqui..." required></textarea>
+          <div class="col-12 col-lg-8 mb-3 mx-auto">
+            <label for="message" class="form-label"
+              >Digite Sua mensagem para nós</label
+            >
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="3"
+              placeholder="Sua mensagem aqui..."
+              required
+            ></textarea>
           </div>
           <div class="col-12 text-center">
             <button type="submit" class="btn btn-success px-5">Enviar</button>
-            <button type="reset" class="btn btn-primary px-3">Limpar Dados</button>
+            <button type="reset" class="btn btn-primary px-3">
+              Limpar Dados
+            </button>
           </div>
         </form>
       </div>
       <div class="row bg-success footer mt-5">
         <div class="col-12 text-center">
-            © 2018 by APRENDA JÁ. Todos Direitos Reservados.
+          © 2018 by APRENDA JÁ. Todos Direitos Reservados.
         </div>
       </div>
     </div>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
