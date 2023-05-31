@@ -13,6 +13,26 @@
 
 }
 
+.max {
+    font-weight: 800;
+    animation: changeColor 2s infinite;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+@keyframes changeColor {
+    0% {
+        background-color: blue;
+    }
+    50% {
+      background-color: red;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+
 .ajust {
     height: 90px;
 }
@@ -57,7 +77,7 @@
 
 .button-top {
     position: fixed;
-    color: rgb(18, 105, 0)!important;
+    color: rgb(18, 105, 0);
     bottom: 0.1em;
     right: 0.1em;
     text-decoration: none;
